@@ -60,16 +60,16 @@ h1 {
 }
 
 .batman .bgPicture{
-    background-image: url(img/bg-batman.jpg);
+    background-image: url(../img/bg-batman.jpg);
     background-size: 200%;
 }
 
 .wonderwoman .bgPicture {
-    background-image: url(img/bg-wonderw.jpg);
+    background-image: url(../img/bg-wonderw.jpg);
 }
 
 .superman .bgPicture {
-    background-image: url(img/bg-superman.jpg);
+    background-image: url(../img/bg-superman.jpg);
 }
 
 img {
