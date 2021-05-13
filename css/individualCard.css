@@ -31,7 +31,7 @@ main .harleyQuinn {
     background-attachment: fixed;
     background-size: cover;
     height: calc(100vh - 15vh);
-    padding: 10vh 10vw;
+    padding: 0 10vw 10vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,32 +39,38 @@ main .harleyQuinn {
 }
 
 .card.wonderwoman {
-    background-size: 125%;
+    background-size: 170%;
 }
 
 .images {
-    margin-bottom: -15%;
     z-index: 1;
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
 .profile{
     border-radius: 50%;
+    margin-bottom: 1rem;
+    margin-right: calc(50% - 5rem);
     width: 10rem;
 }
 
 .like {
-    margin-top: -10%;
-    margin-left: -100%;
+    margin-top: 15%;
 }
 
 .content {
     background-color: var(--thirdColor);
     border-radius: 10%;
-    height: 480px;
-    padding: 13vh 3vw;
+    max-height: 480px;
+    margin-top: 10vh;
+    padding: 0 3vw 13vh;
     width: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 h2 {
@@ -119,3 +125,28 @@ a:visited {
 .allRights {
     margin-top: 0;
 }
+
+
+@media screen and (max-width: 768px){
+    main {
+        width: 100%;
+    }
+
+    .card {
+        padding: 1%;
+    }
+
+    .content {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        height: fit-content;
+        width: auto;
+    }
+
+    .button {
+        margin: 0vh;
+        width: 100%;
+    }
+
+}
+    
