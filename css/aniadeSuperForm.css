@@ -1,0 +1,148 @@
+@import url("formularios.css");
+
+main .formulario {
+    background-color: var(--primaryColor);
+    border-radius: 25px;
+    height: 100%;
+    min-width: 70vw;
+    max-width: 90vw;
+    padding: 2vh 3vw;
+}
+
+h2 {
+    color: var(--thirdColor);
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.formulario {
+    display: flex;
+    align-items: center;
+}
+
+.columns {
+    gap: 2vw;
+    flex-direction: row;
+}
+
+form div{
+    gap: 2vh;
+    min-width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+main p, label, h4, fieldset legend {
+    color: var(--thirdColor);
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+input, select, textarea {
+    width: auto;
+}
+
+textarea {
+    height: 55%;
+    padding: 10px;
+}
+
+textarea::placeholder {
+    color: #000000;
+}
+
+textarea:focus::placeholder{
+    color: transparent; 
+}
+
+input:not(:last-child), input:last-child, 
+select, textarea {
+    border: 1.53px solid #0000001A;
+    margin: 0 0 1vh;
+}
+
+input[type="file"] {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+label[for="files"] {
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #137bb8;
+    display: inline-block;
+    transition: all .5s;
+    cursor: pointer;
+    padding: 15px 40px;
+    text-transform: uppercase;
+    width: fit-content;
+    text-align: center;
+}
+
+    
+fieldset {
+    border: none;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main fieldset label {
+    font-family: 'Karla', sans-serif;
+}
+
+input[type= checkbox], input[type= radio] {
+    cursor: pointer;
+    font-size: 1rem;
+    height: 1em;
+    margin: 0.7rem 0.5rem;
+    margin-right: 1rem;
+    transform: scale(2);
+}
+
+.poderes {
+    border-bottom: 1px solid #CCCCCC;
+} 
+
+main div form .botonesForm {
+    align-items: center;
+}
+
+.botonAniadir {
+    background-color: #1CD1B0;
+    border-radius: 10px;
+    color: #000000;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 2.5rem;
+    text-decoration: none;
+    padding: 1.05rem;
+    width: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botonAniadir:hover {
+    background-color: #001D2D;
+    color: #FFFFFF;
+}
+
+
+@media screen and (max-width: 640px){
+    .columns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .botonAniadir {
+        width: 75%;
+    }
+}

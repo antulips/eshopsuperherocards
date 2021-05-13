@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es" style="scroll-behavior: smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Superheroe Card</title>
+    <link rel="stylesheet" href="../../css/aniadeSuperForm.css">
+</head>
+
+<body>
+    <div class="topBar">
+        <p>Descuentos 20%</p>
+    </div>
+    <header>
+        <div class="mainTitle">
+            <img src="../../img/OBJECTS.png" alt="Logo Tienda">
+            <h1>Superheroes Cards E-shop</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../../html/formularios/Contact.html">Contacto</a></li>
+                <li><a href="../../html/formularios/register.html">Registrarme</a></li>
+                <li><a href="../../html/formularios/login.html">Ingresar</a></li>
+                <li><a href="../../index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="formulario">
+            <h2>¡Añadí tu super!</h2>
+            <p>Agregá tu personaje favorito completando las opciones</p>
+            <form action="../../index.html">
+                <div class="columns">
+                    <div class="column1">
+                        <label for="name">* Nombre:</label>
+                        <input type="text" id="name" name="nombre">
+
+                        <label for="date">Fecha:</label>
+                        <input type="date" id="date" value="10-20-1941">
+
+                        <textarea name="textoUsuario" placeholder="Descripción"></textarea>
+                    </div>
+                    <div class="column2">
+                        <label for="type">* Especie:</label>
+                        <select name="type" id="type" placeholder="Especie">
+                            <option value="cosmicBeing">Ser cósmico</option>
+                            <option value="elemental">Elemental</option>
+                            <option value="mutant">Mutante</option>
+                            <option value="human">Humano/a/e</option>
+                            <option value="other">Otra</option>
+                            <option value="unknown">Desconocida</option>
+                        </select>
+
+                        <h4>Agregar Foto</h4>
+                        <label for="files"><input type="file" id="files" placeholder="Seleccionar archivo"
+                                accept=".jpg, .svg, .png"> Seleccionar Archivo</label>
+
+                        <fieldset class="poderes">
+                            <legend>Poderes</legend>
+                            <label for="fly"><input type="checkbox" id="fly" name="poderes" value="fly">
+                                Volar</label>
+                            <label for="superintelligence"><input type="checkbox" id="superintelligence" name="poderes"
+                                    value="superintelligence">
+                                Superinteligencia</label>
+                            <label for="lasers"><input type="checkbox" id="lasers" name="poderes" value="lasers">
+                                Visión de rayos láser</label></label>
+                            <label for="wallet"><input type="checkbox" id="wallet" name="poderes" value="wallet">
+                                Billetera gorda</label>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Tipo de Personaje</legend>
+                            <label for="hero"><input type="radio" id="hero" name="characterType" value="hero">
+                                Héroe / Heroína</label>
+                            <label for="villain"><input type="radio" id="villain" name="characterType" value="villain">
+                                Villano / Villana</label>
+                        </fieldset>
+                    </div>
+                </div>
+                <div class="botonesForm">
+                    <a href="../../index.html" class="botonAniadir">Añadir</a>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer class="allRights">
+        <p>Todos los derechos reservados a FRONT END 1</p>
+    </footer>
+</body>
+
+</html>

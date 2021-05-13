@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;700&family=Karla:wght@400;700&display=swap');
+@import url("base.css");
+
+:root {
+    --primaryColor: #00669F;
+    --secondaryColor: #1CD1B0;
+    --thirdColor: #F3F3F3;
+}
+
+main {
+    margin: 10vh 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario {
+    height: 65vh;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 3rem;
+    padding-bottom: 10px;;
+}
+
+input, select, textarea {
+    border-radius: 10px;
+    font-family: 'Karla', sans-serif;
+    height: 3rem;
+    letter-spacing: 0.1rem;
+    width: 100%;
+}
+
+input:not(:last-child) {
+    border: solid #000000 2px;
+    margin: 10px 0; 
+    padding-left: 10px;
+}
+
+input::placeholder {
+    color: #000000;
+    font-size: 1.15em;
+}
+
+input:focus {
+    background-color: var(--thirdColor);
+}
+
+input:focus::placeholder{
+    color: transparent; 
+}
+
+select, textarea {
+    border: solid #000000 2px;
+    font-size: 1.1em;
+    margin: 10px 0; 
+    padding-left: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+select:hover {
+    background-color: var(--thirdColor);
+}
+
+option {
+    font-family: 'Karla', sans-serif;
+}
+
+input[type="submit"] {
+    background-color: var(--secondaryColor);
+    border: none;
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-top: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="reset"] {
+    background-color: #888888;
+    border: none;
+    color: #FFFFFF;
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-top: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+textarea {
+    height: 200px;
+    width: 100%;
+}
+
+main div form .botonesForm {
+    display: flex;
+    gap: 1vw;
+}
+
+main p {
+    font-family: 'Karla', sans-serif;
+    margin: 1.5vh;
+    text-align: center;
+}
+
+main p a {
+    font-family: 'Karla', sans-serif;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 480px){
+    
+    .formulario {
+        width: 70%;
+    }
+}
+ 

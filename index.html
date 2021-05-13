@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" style="scroll-behavior: smooth">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Super Hero Cards</title>
+    <meta http-equiv="X-UA-Compatible" cardText="IE=edge">
+    <meta name="viewport" cardText="width=device-width, initial-scale=1.0">
+    <title>E-shop Superhero Cards</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" />
@@ -19,66 +19,96 @@
         <p>Descuentos 20%</p>
     </div>
     <header>
-        <h1>Card Super Heroes</h1>
+        <div class="mainTitle">
+            <img src="img/OBJECTS.png" alt="Logo Tienda">
+            <h1>Superheroes Cards E-shop</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="html/formularios/Contact.html">Contacto</a></li>
+                <li><a href="html/formularios/register.html">Registrarme</a></li>
+                <li><a href="html/formularios/login.html">Ingresar</a></li>
+            </ul>
+        </nav>
     </header>
+
     <main>
-        <div class="card batman">
-            <div class="like">
-                <i class="fas fa-heart"></i>
+        <section class="cards">
+            <div class="card batman">
+                <div class="cardPicture">
+                    <div class="like">
+                        <img src="img/Corazon.png" alt="Corazón rojo">
+                    </div>
+                    <img class="profile" src="img/batman.jpg" alt="Foto perfil de Batman">
+                </div>
+                <div class="cardText">
+                    <h2>Batman</h2>
+                    <p>Bruce Wayne es el único personaje que se identifica como Batman y aparece en Batman, Detective
+                        Comics, Batman y Robin, y Batman: The Dark Knight. Dick Grayson vuelve al manto de Nightwing.
+                    </p>
+                    <a href="html/superPages/Batman.html" class="button">Ver más</a>
+                </div>
             </div>
-            <div class="bgPicture">
-                <img src="img/batman.jpg" alt="Foto carnet de Batman">
-            </div>
-            <div class="content">
-                <h2>Batman</h2>
-                <p>Bruce Wayne es el único personaje que se identifica como Batman y aparece en Batman, Detective
-                    Comics, Batman y Robin, y Batman: The Dark Knight. Dick Grayson vuelve al manto de Nightwing.</p>
-                <a href="https://www.instagram.com/batman/?hl=es-la" target="_blank" class="button">Ver más</a>
-            </div>
-        </div>
-        <div class="plusButton">
-            <a href="https://www.instagram.com/dccomics/?hl=es-la"></i><i class="fas fa-plus-circle"></i></a>
-        </div>
 
-        <div class="card wonderwoman">
-            <div class="like">
-                <i class="fas fa-heart"></i>
+            <div class="card wonderwoman">
+                <div class="cardPicture">
+                    <div class="like">
+                        <img src="img/Corazon.png" alt="Corazón rojo">
+                    </div>
+                    <img class="profile" src="img/ww.jpg" alt="Foto perfil de Mujer Maravilla">
+                </div>
+                <div class="cardText">
+                    <h2>Mujer Maravilla</h2>
+                    <p>El personaje apareció como tal publicado por primera vez en la revista de historietas All Star
+                        Comics
+                        (de diciembre de 1941)​ y con su alter-ego en el Sensation Comics.</p>
+                    <a href="html/superPages/WonderWoman.html" class="button">Ver
+                        más</a>
+                </div>
             </div>
-            <div class="bgPicture">
-                <img src="img/ww.jpg" alt="Foto carnet de Mujer Maravilla">
-            </div>
-            <div class="content">
-                <h2>Mujer Maravilla</h2>
-                <p>El personaje apareció como tal publicado por primera vez en la revista de historietas All Star Comics
-                    (de diciembre de 1941)​ y con su alter-ego en el Sensation Comics.</p>
-                <a href="https://www.instagram.com/wonderwoman/?hl=es" target="_blank" class="button">Ver más</a>
-            </div>
-        </div>
-        <div class="plusButton">
-            <a href="https://www.instagram.com/dccomics/?hl=es-la"></i><i class="fas fa-plus-circle"></i></a>
-        </div>
 
-        <div class="card superman">
-            <div class="like">
-                <i class="fas fa-heart"></i>
+            <div class="card superman">
+                <div class="cardPicture">
+                    <div class="like">
+                        <img src="img/Corazon.png" alt="Corazón rojo">
+                    </div>
+                    <img class="profile" src="img/sman.jpg" alt="Foto perfil de Superman">
+                </div>
+                <div class="cardText">
+                    <h2>Superman</h2>
+                    <p>Superman nace en un mundo extraño a una especie tecnológicamente avanzada que se parece a los
+                        humanos. Poco después de nacer, su planeta se destruye en un cataclismo natural.</p>
+                    <a href="html/superPages/Superman.html" class="button">Ver
+                        más</a>
+                </div>
             </div>
-            <div class="bgPicture">
-                <img src="img/sman.jpg" alt="Foto carnet de Superman">
+
+            <div class="card harleyQuinn">
+                <div class="cardPicture">
+                    <div class="like">
+                        <img src="img/Corazon.png" alt="Corazón rojo">
+                    </div>
+                    <img class="profile" src="img/hq.png" alt="Foto perfil de Harley Quinn">
+                </div>
+                <div class="cardText">
+                    <h2>Harley Quinn</h2>
+                    <p>La creación de Harley Quinn fue una idea de último minuto propuesta por el escritor
+                        estadounidense
+                        Paul Dini para modificar una escena del vigésimo-segundo episodio de Batman: la serie animada.
+                    </p>
+                    <a href="html/superPages/HarleyQuinn.html" target="_blank"
+                        class="button">Ver más</a>
+                </div>
             </div>
-            <div class="content">
-                <h2>Superman</h2>
-                <p>Superman nace en un mundo extraño a una especie tecnológicamente avanzada que se parece a los
-                    humanos. Poco después de nacer, su planeta se destruye en un cataclismo natural.</p>
-                <a href="https://www.instagram.com/superman/?hl=es" target="_blank" class="button">Ver más</a>
-            </div>
-        </div>
+        </section>
+
         <div class="plusButton">
-            <a href="https://www.instagram.com/dccomics/?hl=es-la" target="_blank"></i><i class="fas fa-plus-circle"></i></a>
-        </div>    
+            <a href="html/formularios/formularioSuper.html" target="_blank"><i class="fas fa-plus-circle"></i></a>
+        </div>
     </main>
-<footer class="allRights">    
-    <p>Todos los derechos reservados a FRONT END 1</p>
-</footer>
+    <footer class="allRights">
+        <p>Todos los derechos reservados a FRONT END 1</p>
+    </footer>
 </body>
 
 </html>

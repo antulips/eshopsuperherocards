@@ -1,0 +1,104 @@
+:root {
+    --thirdColor: #F3F3F3;
+}
+
+main section {
+    gap: 4rem 2rem;
+}
+
+main section .card {
+    height: 500px;
+    width: 330px;
+}
+
+.cardPicture {
+    background-color: var(--thirdColor);
+    background-position-y: center;
+    background-position-x: 70%;
+    background-size: cover;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.batman .cardPicture {
+    background-image: url(../img/bg-batman.jpg);
+    background-size: 200%;
+}
+
+.wonderwoman .cardPicture {
+    background-image: url(../img/bg-wonderw.jpg);
+}
+
+.superman .cardPicture {
+    background-image: url(../img/bg-superman.jpg);
+}
+
+.harleyQuinn .cardPicture {
+    background-image: url(../img/bg-hq.png);
+}
+
+.like {
+    padding: 10px;
+    display: flex;
+}
+
+.like:hover {
+    transform: scale(1.05);
+    transform-origin: left;
+}
+
+main section div div div img {
+    width: 40px;
+}
+ 
+.profile {
+    border-radius: 50%;
+    width: 8rem;
+    z-index: 1;
+    margin-top: 2rem;
+    display: flex;
+    align-self: center;
+}
+
+.cardText {
+    background-color: #F3F3F3;
+    box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.20);
+    min-height: 350px;
+    padding: 15% 10% 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+h2 {
+    font-size: 1.7rem;
+    font-style: normal;
+    font-weight: 400;
+    padding: 5%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.cardText p {
+    font-size: 1rem;
+    text-align: left;
+}
+
+
+.button {
+    background-color: #00669F;
+    bottom: 30px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-size: 0.9rem;
+    height: 42px;
+    margin-top: 5%;
+    padding: 15px 50px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
